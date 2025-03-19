@@ -5,19 +5,19 @@ const features = [
       icon: "🌡️",
     },
     {
-      title: "Hydration Tracking",
-      description: "Track daily water intake and set reminders.",
-      icon: "📊",
+      title: "Hydration Analysis",
+      description: "Monitors water intake trends and provides smart insights.",
+      icon: "💧",
     },
     {
-      title: "Adaptive Intelligence",
-      description: "AI-powered temperature recommendations.",
-      icon: "🤖",
+      title: "User Adaption",
+      description: "Learns your hydration habits for a personalized experience.",
+      icon: "🔄",
     },
     {
-      title: "Long Battery Life",
-      description: "Up to 48 hours of continuous usage.",
-      icon: "🔋",
+      title: "Environmental Adaption",
+      description: "Automatically adjusts water temperature based on surroundings.",
+      icon: "🌎",
     },
   ];
   
