@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-// import bottleImage from "../assets/hydrax-bottle.png";
 
 const Hero = () => {
   return (
@@ -9,36 +8,25 @@ const Hero = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div
-        className="min-h-screen bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#334155] 
-        relative flex flex-col items-center justify-center text-white text-center p-6 overflow-hidden"
-      >
-        {/* Glassmorphism Effect */}
-        <div className="absolute inset-0 bg-white/10 backdrop-blur-[120px] rounded-xl pointer-events-none"></div>
-
-        {/* Animated Particles */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute w-72 h-72 bg-purple-500 rounded-full opacity-20 blur-3xl top-1/4 left-1/4 animate-pulse"></div>
-          <div className="absolute w-60 h-60 bg-blue-500 rounded-full opacity-20 blur-3xl bottom-1/4 right-1/4 animate-pulse delay-200"></div>
-        </div>
-
+      <div className="min-h-screen bg-gradient-to-r from-black via-gray-900 to-black flex flex-col items-center justify-center text-white text-center p-6">
         {/* Hero Text */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="relative z-10 max-w-3xl"
+          className="max-w-2xl"
         >
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-purple-500 drop-shadow-xl">
-            Cooler. Hotter. Smarter.
+          <h1 className="text-5xl font-bold tracking-tight mb-4">
+            Cooler. Heater. Smarter.
           </h1>
-          <p className="text-lg md:text-xl opacity-90 mb-8 text-gray-200">
-            Redefining hydration with cutting-edge technology and intelligent temperature control.
+          <p className="text-lg opacity-80 mb-6">
+            Experience the future of hydration with temperature control and
+            smart tracking.
           </p>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-8 rounded-full shadow-xl hover:shadow-2xl hover:from-purple-600 hover:to-blue-500 transition-all duration-300"
+            className="bg-white text-black font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-200 transition"
           >
             Pre-Order Now
           </motion.button>
@@ -49,13 +37,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
-          className="mt-12 relative z-10"
+          className="mt-10"
         >
-          {/* <img
-            src={bottleImage}
+          <img
+            src="src/assets/hydrax-bottle.png"
             alt="HydraX Bottle"
-            className="w-56 md:w-72 mx-auto drop-shadow-2xl"
-          /> */}
+            className="w-48 md:w-64 mx-auto drop-shadow-lg"
+          />
         </motion.div>
       </div>
     </div>

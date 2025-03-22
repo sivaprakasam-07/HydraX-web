@@ -5,26 +5,25 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full h-16 bg-white shadow-md z-50">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center max-h-16">
+    <nav className="fixed w-full bg-black shadow-md z-50">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* HydraX Logo */}
         <div className="flex items-center space-x-2">
           <img
             src="src/assets/hydrax-logo.png"
             alt="HydraX Logo"
-            className="w-24 h-30  object-contain cursor-pointer"
+            className="w-24 h-12 object-contain cursor-pointer"
           />
-          <span className="text-2xl font-bold text-blue-600"></span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-gray-700 font-semibold">
+        <ul className="hidden md:flex space-x-6 text-white font-semibold">
           <li>
             <Link
               to="hero"
               smooth={true}
               duration={500}
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-gray-300 cursor-pointer"
             >
               Home
             </Link>
@@ -34,7 +33,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-gray-300 cursor-pointer"
             >
               About Us
             </Link>
@@ -44,7 +43,7 @@ const Navbar = () => {
               to="features"
               smooth={true}
               duration={500}
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-gray-300 cursor-pointer"
             >
               Features
             </Link>
@@ -54,7 +53,7 @@ const Navbar = () => {
               to="how-it-works"
               smooth={true}
               duration={500}
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-gray-300 cursor-pointer"
             >
               How It Works
             </Link>
@@ -64,7 +63,7 @@ const Navbar = () => {
               to="testimonials"
               smooth={true}
               duration={500}
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-gray-300 cursor-pointer"
             >
               Testimonials
             </Link>
@@ -74,7 +73,7 @@ const Navbar = () => {
               to="preorder"
               smooth={true}
               duration={500}
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-gray-300 cursor-pointer"
             >
               Pre-Order
             </Link>
@@ -88,7 +87,7 @@ const Navbar = () => {
         >
           {isOpen ? (
             <svg
-              className="w-6 h-6"
+              className="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -102,7 +101,7 @@ const Navbar = () => {
             </svg>
           ) : (
             <svg
-              className="w-6 h-6"
+              className="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -119,68 +118,68 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-white shadow-lg md:hidden">
-            <li className="border-b">
+          <ul className="absolute top-16 left-0 w-full bg-black shadow-lg md:hidden">
+            <li className="border-b border-gray-700">
               <Link
                 to="hero"
                 smooth={true}
                 duration={500}
-                className="block px-4 py-3 text-gray-700 hover:bg-blue-50 cursor-pointer"
+                className="block px-4 py-3 text-white hover:bg-gray-800 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
             </li>
-            <li className="border-b">
+            <li className="border-b border-gray-700">
               <Link
                 to="about"
                 smooth={true}
                 duration={500}
-                className="block px-4 py-3 text-gray-700 hover:bg-blue-50 cursor-pointer"
+                className="block px-4 py-3 text-white hover:bg-gray-800 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 About Us
               </Link>
             </li>
-            <li className="border-b">
+            <li className="border-b border-gray-700">
               <Link
                 to="features"
                 smooth={true}
                 duration={500}
-                className="block px-4 py-3 text-gray-700 hover:bg-blue-50 cursor-pointer"
+                className="block px-4 py-3 text-white hover:bg-gray-800 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 Features
               </Link>
             </li>
-            <li className="border-b">
+            <li className="border-b border-gray-700">
               <Link
                 to="how-it-works"
                 smooth={true}
                 duration={500}
-                className="block px-4 py-3 text-gray-700 hover:bg-blue-50 cursor-pointer"
+                className="block px-4 py-3 text-white hover:bg-gray-800 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 How It Works
               </Link>
             </li>
-            <li className="border-b">
+            <li className="border-b border-gray-700">
               <Link
                 to="testimonials"
                 smooth={true}
                 duration={500}
-                className="block px-4 py-3 text-gray-700 hover:bg-blue-50 cursor-pointer"
+                className="block px-4 py-3 text-white hover:bg-gray-800 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 Testimonials
               </Link>
             </li>
-            <li className="border-b">
+            <li className="border-b border-gray-700">
               <Link
                 to="preorder"
                 smooth={true}
                 duration={500}
-                className="block px-4 py-3 text-gray-700 hover:bg-blue-50 cursor-pointer"
+                className="block px-4 py-3 text-white hover:bg-gray-800 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 Pre-Order
